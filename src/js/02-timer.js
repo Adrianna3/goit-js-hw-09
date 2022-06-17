@@ -5,12 +5,16 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 import Notiflix from 'notiflix';
 
+
+
 const start = document.querySelector('button[data-start]');
 const dataDays = document.querySelector('span[data-days]');
 const dataHours = document.querySelector('span[data-hours]');
 const dataMinutes = document.querySelector('span[data-minutes]');
 const dataSeconds = document.querySelector('span[data-seconds]');
 const dateTimePicker = document.querySelector('#datetime-picker');
+start.setAttribute('disabled', 'disabled');
+
 
 const options = {
   enableTime: true,
